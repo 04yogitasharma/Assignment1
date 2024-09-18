@@ -1,26 +1,33 @@
 package assignment_1;
 
+import java.util.Scanner;
+
 public class Assign_Grade {
 
 	public static void main(String[] args) {
-		char grade='Z';
-		if(grade=='A') {
-			System.out.println("Your grade is "+grade);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int grade=sc.nextInt();
+		if(grade>=90) {
+			System.out.println("Your grade is A");
 		}
-//		else if(grade=='B') {
-//			System.out.println("Your grade is "+grade);
-//		}
-//		else if(grade=='C') {
-//			System.out.println("Your grade is "+grade);
-//		}
-//		else if(grade=='D') {
-//			System.out.println("Your grade is "+grade);
-//		}
-//		else if(grade=='E') {
-//			System.out.println("Your grade is "+grade);
-//		}
+		else if(grade>=80) {
+			System.out.println("Your grade is B");
+		}
+		else if(grade>=70) {
+			System.out.println("Your grade is C");
+		}
+		else if(grade>=60) {
+			System.out.println("Your grade is D");
+		}
+		else if(grade>=50) {
+			System.out.println("Your grade is E");
+		}
+		else if(grade>=40){
+			System.out.println("Your grade is F");
+		}
 		else {
-			System.out.println("Your grade is "+grade);
+			System.out.println("You are fail!!");
 		}
 
 	}
